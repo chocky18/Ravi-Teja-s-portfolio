@@ -28,7 +28,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['yourdomain.com', 'localhost',
 #                  'portfolio-d734.onrender.com', 'portfolio-xxx5.onrender.com', "127.0.0.1"]
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "ravi-teja-s-portfolio.vercel.app"]
 
 
 # Application definition
