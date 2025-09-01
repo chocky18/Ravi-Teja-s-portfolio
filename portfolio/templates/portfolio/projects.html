@@ -1,0 +1,252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ravi Teja's Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'portfolio/assets/favicon.ico' %}" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'portfolio/css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="{% url 'index' %}"><span class="fw-bolder text-primary">Ravi
+                        Teja BHIMA</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Any Queries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'details' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Projects Section-->
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-12 col-xl-11 col-xxl-10">
+                        <!-- Project Card 1-->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <!-- <h2 class="fw-bolder">Nira AI</h2> -->
+                                        <p
+                                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Arial, sans-serif; font-size: 15.5px; line-height: 1.75; color: #1f2937; margin-bottom: 12px;">
+                                            <strong style="font-size: 16.5px; color:#0ea5e9;">Nira AI</strong>
+                                            <br><br>
+                                            <strong style="font-size: 15px; color:#374151;">Multi-agent system with AI
+                                                workflows</strong>
+                                            <br><br>
+                                            Developed and deployed fully responsive web pages using
+                                            <strong>React.js</strong>,
+                                            <strong>JavaScript</strong>, <strong>HTML5</strong>, and
+                                            <strong>CSS3</strong>,
+                                            achieving a <span style="font-weight:600; color:#059669;">30%
+                                                increase</span> in user engagement
+                                            across devices. Integrated a custom <strong>AI-powered chatbot</strong> by
+                                            connecting frontend
+                                            event handling with backend APIs, further boosting engagement by
+                                            <span style="font-weight:600; color:#059669;">30%</span>.
+                                        </p>
+
+                                        <ul
+                                            style="margin-left:18px; font-size: 15px; line-height: 1.75; color: #374151;">
+                                            <li>Optimized performance with <strong>RESTful API integration</strong> and
+                                                dynamic rendering
+                                                using <strong>Python</strong> and <strong>Node.js</strong>, reducing
+                                                load times by
+                                                <span style="font-weight:600; color:#ef4444;">40%</span>.
+                                            </li>
+                                            <li>Designed and implemented complete <strong>CRUD functionality</strong>
+                                                with
+                                                <strong>MongoDB</strong>, improving database efficiency by
+                                                <span style="font-weight:600; color:#ef4444;">40%</span>.
+                                            </li>
+                                            <li>Built robust API endpoints (<strong>GET, POST, PUT, DELETE</strong>) and
+                                                ensured seamless
+                                                frontend–backend synchronization, enhancing workflow efficiency by
+                                                <span style="font-weight:600; color:#059669;">30%</span>.
+                                            </li>
+                                            <li>Maintained deployment workflows with <strong>Git</strong> and
+                                                <strong>GitHub</strong>
+                                                for version control, project tracking, and collaboration.
+                                            </li>
+                                            <li>Delivered a consistent and inclusive experience through cross-browser
+                                                compatibility and
+                                                <strong>accessibility compliance</strong> across Chrome, Firefox, and
+                                                Safari.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+  <p style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 18px 22px; line-height: 1.75; font-size: 15.5px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); margin-top:12px;">
+    <em style="font-style: normal; font-weight: 700; color: #0ea5e9; letter-sp
+
+                                    </div>
+                                    <div class="img-container">
+                                        <img class="img-fluid" src="static/assets/logo.png" alt="Company Logo" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2-->
+
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <!-- <h2 class="fw-bolder">Auto Form Blaster</h2> -->
+                                        <p
+                                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Arial, sans-serif; font-size: 15.5px; line-height: 1.75; color: #1f2937; margin-bottom: 12px;">
+                                            <strong style="font-size: 16.5px; color:#0ea5e9;">Wish
+                                                Global Immigration Services</strong>
+                                            <br><br>
+                                            <strong style="font-size: 15px; color:#374151;">Front-end
+                                                Developer</strong>
+                                            <br><br>
+                                            Led end-to-end development of a web application by
+                                            building the frontend with <strong>React.js</strong> and
+                                            deploying on <strong>Vercel</strong>. Configured an
+                                            <strong>AWS Application Load Balancer</strong> with SSL
+                                            certificates to enable secure HTTPS traffic management,
+                                            significantly improving both performance and reliability
+                                            for end users.
+                                        </p>
+
+                                        <ul
+                                            style="margin-left:18px; font-size: 15px; line-height: 1.75; color: #374151;">
+                                            <li>Developed responsive and accessible UI components
+                                                ensuring seamless functionality across devices and
+                                                browsers.</li>
+                                            <li>Optimized frontend performance through efficient
+                                                state management and reusable component
+                                                architecture.</li>
+                                            <li>Collaborated with backend developers to integrate
+                                                REST APIs, ensuring smooth data exchange and
+                                                application scalability.</li>
+                                            <li>Implemented version control with Git and GitHub for
+                                                streamlined collaboration and deployment workflows.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <!--                <iframe width="100%" height="400" src="https://youtu.be/r-UA55OORXk?si=1gxKBguqJz6UOJk7" frameborder="0" allowfullscreen></iframe>-->
+                                    <!-- <iframe width="560" height="315"
+                                                            src="https://www.youtube.com/embed/r-UA55OORXk?si=0mMl3yS_0M1N9SqM"
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            referrerpolicy="strict-origin-when-cross-origin"
+                                                            allowfullscreen></iframe> -->
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="icon-links">
+                        <a href="https://github.com/raviteja1903">
+                            <img src="{% static 'portfolio/assets/icon-github.svg' %}" alt="GitHub" class="icon">
+                        </a>
+                        <a href="mailto:ravitejabhima03@gmail.com">
+                            <img src="{% static 'portfolio/assets/icon-email.svg' %}" alt="email" class="icon">
+                        </a>
+                        <a href="https://nirmataneurotech.com/">
+                            <img src="{% static 'portfolio/assets/images.png' %}" alt="website" class="icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/ravi-teja-721672357/">
+                            <img src="{% static 'portfolio/assets/icon-linkedin.svg' %}" alt="LinkedIn" class="icon">
+                        </a>
+
+                    </div>
+
+                    <style>
+                        .icon-links {
+                            display: flex;
+                            justify-content: center;
+                            /* Center horizontally */
+                            align-items: center;
+                            /* Center vertically */
+                            gap: 20px;
+                            /* Adjust the spacing between icons as needed */
+                            height: 20vh;
+                            /* Adjust the spacing between icons as needed */
+                        }
+
+                        .icon {
+                            width: 32px;
+                            /* Adjust the size of the icons as needed */
+                            height: 32px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+        <section class="py-5 bg-gradient-primary-to-secondary text-white">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact' %}">Contact
+                        me</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright &copy; Your Website 2025</div>
+                </div>
+                <div class="col-auto">
+
+                    <a class="small" href="{% url 'details' %}">My contact Details</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'portfolio/js/scripts.js' %}"></script>
+</body>
+
+</html>

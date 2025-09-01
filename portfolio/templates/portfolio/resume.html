@@ -1,0 +1,417 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ravi Teja's Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'portfolio/assets/favicon.ico' %}" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'portfolio/css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="{% url 'index' %}"><span class="fw-bolder text-primary">Ravi Teja
+                        BHIMA</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Any Queries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'details' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Experience Section-->
+                    <section>
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                            <!-- Download resume button-->
+                            <!-- Note: Set the link href target to a PDF file within your project-->
+                            <a class="btn btn-primary px-4 py-3" href="{% static 'assets/Teja.pdf' %}">
+                                <div class="d-inline-block bi bi-download me-2"></div>
+                                Download Resume
+                            </a>
+                        </div>
+                        <!-- Experience Card 1-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <div class="text-primary fw-bolder mb-2">Dec 2024 - June 2025</div>
+                                            <div class="small fw-bolder">React.js Developer</div>
+                                            <div class="small text-muted">Nirmata Neurotech</div>
+                                            <div class="small text-muted">Hyderabad</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8" style="margin-top:15px;">
+                                        <div style="line-height:1.6; font-size:15px;">
+                                            <strong style="font-size:18px; display:block; margin-bottom:8px;">Technical
+                                                Skills</strong>
+                                            <ul style="margin:0; padding-left:18px;">
+                                                <li><strong>Frontend Development:</strong> React.js, JavaScript (ES6+),
+                                                    HTML5, CSS3, Responsive Web Design, Cross-browser Compatibility,
+                                                    UI/UX Best Practices</li>
+                                                <li><strong>Backend & APIs:</strong> Python, Node.js, RESTful APIs,
+                                                    Event Handling, API Integration</li>
+                                                <li><strong>Databases:</strong> MongoDB (CRUD operations, performance
+                                                    optimization)</li>
+                                                <li><strong>Version Control & Deployment:</strong> Git, GitHub, CI/CD
+                                                    Workflows, Vercel & AWS Deployment</li>
+                                                <li><strong>Performance Optimization:</strong> Dynamic Content
+                                                    Rendering, Load Time Reduction, Scalability Enhancements</li>
+                                                <li><strong>Accessibility:</strong> WCAG Standards, Inclusive Design
+                                                    across Chrome, Firefox, Safari</li>
+                                            </ul>
+
+                                            <strong style="font-size:18px; display:block; margin:15px 0 8px;">Soft &
+                                                Professional Skills</strong>
+                                            <ul style="margin:0; padding-left:18px;">
+                                                <li><strong>Collaboration:</strong> Partnered with backend developers to
+                                                    ensure seamless data flow</li>
+                                                <li><strong>Problem-Solving:</strong> Optimized load times by 40% and
+                                                    improved DB efficiency by 40%</li>
+                                                <li><strong>Innovation:</strong> Developed a custom AI chatbot that
+                                                    boosted engagement by 30%</li>
+                                                <li><strong>Project Ownership:</strong> Handled end-to-end development
+                                                    (frontend to deployment)</li>
+                                                <li><strong>Attention to Detail:</strong> Ensured accessibility &
+                                                    inclusivity for diverse user groups</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience Card 2-->
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                        <div class="bg-light p-4 rounded-4">
+                                            <div class="text-primary fw-bolder mb-2">Aug 2025 - Present</div>
+                                            <div class="small fw-bolder">Front-end Developer</div>
+                                            <div class="small text-muted">Wish Global Immigration Services</div>
+                                            <div class="small text-muted">Hyderabad, India</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div><strong>Highlights</strong>:</div>
+                                        <ul class="mb-2">
+                                            <li>Led end-to-end development of a web application by building the frontend
+                                                with React.js and deploying on Vercel.</li>
+                                            <li>Configured an AWS Application Load Balancer with SSL certificates to
+                                                enable secure HTTPS traffic management, significantly improving
+                                                performance and reliability.</li>
+                                            <li>Developed responsive and accessible UI components ensuring seamless
+                                                functionality across devices and browsers.</li>
+                                            <li>Optimized frontend performance through efficient state management and
+                                                reusable component architecture.</li>
+                                            <li>Collaborated with backend developers to integrate REST APIs, ensuring
+                                                smooth data exchange and scalability.</li>
+                                            <li>Implemented version control with Git and GitHub for streamlined
+                                                collaboration and deployment workflows.</li>
+                                        </ul>
+                                        <div><strong>Skills</strong>: React.js · JavaScript · AWS Application Load
+                                            Balancer · Vercel · UI/UX · API Integration · Git · GitHub</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Education Section-->
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <!-- B.Com Degree -->
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">Sep 2021 - May 2024</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">SVR Degree College</div>
+                                                    <div class="small text-muted">Bachelor of Commerce (B.Com,
+                                                        Computers)</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Secured 80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Bachelor of Degree in Commerce (B.Com Computers), focused on business
+                                                and computer applications.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Education Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <!-- Intermediate -->
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">Jun 2019 - Mar 2021</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">AP Model College</div>
+                                                    <div class="small text-muted">Intermediate (CEC)</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Secured 77%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>Intermediate in Commerce, Economics, and Civics, strengthening
+                                                fundamentals in business and economics.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <!-- Skills Section -->
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Technical Skills</h2>
+
+                            <div class="row row-cols-1 row-cols-md-3 g-3">
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        React.js & JavaScript (ES6+)
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        HTML5 & CSS3
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Responsive Web Design
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Python & Node.js
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        RESTful APIs & Integration
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Event Handling
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        MongoDB (CRUD & Optimization)
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Git & GitHub
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Deployment Workflows
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Performance Optimization
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Cross-Browser Compatibility
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                                        style="color: grey;">
+                                        Accessibility (WCAG Standards)
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- Languages list-->
+                        <div class="mb-0">
+                            <div class="d-flex align-items-center mb-4">
+                                <div
+                                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages &
+                                        Frameworks</span>
+                                </h3>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                        Python
+                                    </div>
+                                </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                        JavaScript
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                        Java
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                        HTML5
+                                    </div>
+                                </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                        React
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                                        Node.js
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            </section>
+        </div>
+        </div>
+        <div class="icon-links">
+            <a href="https://github.com/raviteja1903">
+                <img src="{% static 'portfolio/assets/icon-github.svg' %}" alt="GitHub" class="icon">
+            </a>
+            <a href="mailto:ravitejabhima03@gmail.com">
+                <img src="{% static 'portfolio/assets/icon-email.svg' %}" alt="email" class="icon">
+            </a>
+            <a href="https://nirmataneurotech.com/">
+                <img src="{% static 'portfolio/assets/images.png' %}" alt="website" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ravi-teja-721672357/">
+                <img src="{% static 'portfolio/assets/icon-linkedin.svg' %}" alt="LinkedIn" class="icon">
+            </a>
+
+        </div>
+
+        <style>
+            .icon-links {
+                display: flex;
+                justify-content: center;
+                /* Center horizontally */
+                align-items: center;
+                /* Center vertically */
+                gap: 20px;
+                /* Adjust the spacing between icons as needed */
+                height: 20vh;
+                /* Adjust the spacing between icons as needed */
+            }
+
+            .icon {
+                width: 32px;
+                /* Adjust the size of the icons as needed */
+                height: 32px;
+            }
+        </style>
+        </div>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright &copy; MyPortfolio</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Contact</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'portfolio/js/scripts.js' %}"></script>
+</body>
+
+</html>
